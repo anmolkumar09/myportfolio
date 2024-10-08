@@ -2,9 +2,8 @@ import React from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
-import { experiences } from "../../data/constants";
-import ExperienceCard from "../cards/ExperienceCard";
-
+import { education } from "../../data/constants";
+import EducationCard from "../cards/EducationCard"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -50,12 +49,12 @@ const Desc = styled.div`
 `;
 
 
-const Experience = () => {
+const Education = () => {
   return (
-      <Container id="Experience">
+      <Container id="Education">
       <Wrapper>
         
-        <Title>Experience</Title>
+        <Title>Education</Title>
         <Desc
           style={{
             marginBottom: "40px",
@@ -66,10 +65,10 @@ const Experience = () => {
         </Desc>
 
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
+          {education.map((education, index) => (
+            <EducationCard
+              key={`education-${index}`}
+              education={education}
             />
           ))}
         </VerticalTimeline>
@@ -78,4 +77,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
