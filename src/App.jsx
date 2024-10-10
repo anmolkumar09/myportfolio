@@ -5,6 +5,8 @@ import {BrowserRouter} from 'react-router-dom'
 import HeroSection from "./components/section/Hero"
 import Skills from "./components/section/Skills"
 import Experience from "./components/section/Experience"
+// import Project from "./components/section/Project"
+import Education from "./components/section/Education"
 const Body = styled.div`
   background-color: ${({theme})=> theme.bg};
   width: 100%;
@@ -23,6 +25,8 @@ function App() {
         <HeroSection/>
         <Skills/>
         <Experience/>
+        <Education/>
+        {/* <Project/> */}
       </Body>
     </BrowserRouter>
   </ThemeProvider>

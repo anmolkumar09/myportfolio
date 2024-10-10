@@ -145,7 +145,7 @@ const Navbar = () => {
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to="/">gGfg</NavLogo>
+                <NavLogo to="/">PortFolio</NavLogo>
 
                 <MobileIcon onClick={() => SetIsOpen(!IsOpen)}>
                     <MenuRounded />
